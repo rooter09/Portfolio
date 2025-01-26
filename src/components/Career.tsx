@@ -18,7 +18,7 @@ const Career = () => {
                 <h4>CO-FOUNDER & CTO</h4>
                 <h5>NEXXIGITAL</h5>
               </div>
-              <h3>2024-Present</h3>
+              <h3> July 2024-Present</h3>
             </div>
             <p>
               As Co-Founder and CTO, I lead product innovation, manage technical
@@ -32,7 +32,7 @@ const Career = () => {
                 <h4>Digital Marketing Executive</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>Jan 2023- Jan 2025</h3>
             </div>
             <p>
               As a Digital Marketing Executive at Purezza, I developed and
@@ -48,7 +48,7 @@ const Career = () => {
                 <h4>Cyber Security Analyst</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>June 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -62,33 +62,35 @@ const Career = () => {
                 <h4>Threat Hunting</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>June 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               labore sit non ipsum temporibus quidem, deserunt eaque officiis
               mollitia ratione suscipit repellat.
             </p>
-          </div><div className="career-info-box">
+          </div>
+          <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Project Manager</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>June 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               labore sit non ipsum temporibus quidem, deserunt eaque officiis
               mollitia ratione suscipit repellat.
             </p>
-          </div><div className="career-info-box">
+          </div>
+          <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Team Manager</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>June 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -102,7 +104,7 @@ const Career = () => {
                 <h4>WordPress Developer</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>Jan 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -116,7 +118,7 @@ const Career = () => {
                 <h4>Graphics Designer</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>Jan 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -130,7 +132,7 @@ const Career = () => {
                 <h4>Workshops and Training</h4>
                 <h5>Purezza Technologies</h5>
               </div>
-              <h3>2022-2024</h3>
+              <h3>Jan 2023- Jan 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -144,7 +146,7 @@ const Career = () => {
                 <h4>Senior Graphics Designer</h4>
                 <h5>Clinical AI ASSISTANCE</h5>
               </div>
-              <h3>2024-2024</h3>
+              <h3>Jan 2024- Feb 2025</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -158,7 +160,7 @@ const Career = () => {
                 <h4>Visual Designer</h4>
                 <h5>Timeline Investment</h5>
               </div>
-              <h3>2023-2023</h3>
+              <h3>Aug 2023- Nov 2023</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -172,7 +174,7 @@ const Career = () => {
                 <h4>HOD - Graphics Desgining</h4>
                 <h5>Nyayashaya Foundation</h5>
               </div>
-              <h3>2023-2023</h3>
+              <h3>Aug 2023- Sep 2023</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -186,7 +188,7 @@ const Career = () => {
                 <h4>Website Developer</h4>
                 <h5>Lush Association</h5>
               </div>
-              <h3>2023-2023</h3>
+              <h3>Mar 2023- Aug 2023</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -199,6 +201,34 @@ const Career = () => {
               <div className="career-role">
                 <h4>Graphics Designer</h4>
                 <h5>Lush Assocation</h5>
+              </div>
+              <h3>Mar 2023-Aug 2023</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              labore sit non ipsum temporibus quidem, deserunt eaque officiis
+              mollitia ratione suscipit repellat.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Digital Marketing Intern</h4>
+                <h5>De Castro Group</h5>
+              </div>
+              <h3>Mar 2023-Aug 2023</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              labore sit non ipsum temporibus quidem, deserunt eaque officiis
+              mollitia ratione suscipit repellat.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>SOCIAL ENTREPRENEURSHIP</h4>
+                <h5>Hamari Pahchan</h5>
               </div>
               <h3>Mar 2023-Aug 2023</h3>
             </div>
