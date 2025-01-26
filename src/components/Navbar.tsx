@@ -1,44 +1,41 @@
 import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis";
 import HoverLinks from "./HoverLinks";
-import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
+let lenis: Lenis;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   useEffect(() => {
-    smoother = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
-      autoResize: true,
-      ignoreMobileResize: true,
+    lenis = new Lenis({
+      lerp: 0.1, 
     });
 
-    smoother.scrollTop(0);
-    smoother.paused(true);
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
 
-    let links = document.querySelectorAll(".header ul a");
+    lenis.scrollTo(0); // Scroll to the top on load
+
+    const links = document.querySelectorAll<HTMLAnchorElement>(".header ul a");
     links.forEach((elem) => {
-      let element = elem as HTMLAnchorElement;
-      element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
-          e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        const section = elem.getAttribute("data-href");
+        if (section) {
+          const target = document.querySelector(section) as HTMLElement | null;
+          if (target) lenis.scrollTo(target);
         }
       });
     });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
-    });
+
+    return () => {
+      lenis.destroy(); // Clean up Lenis instance on component unmount
+    };
   }, []);
+
   return (
     <>
       <div className="header">
@@ -46,10 +43,11 @@ const Navbar = () => {
           HARSH SANDILYA
         </a>
         <a
-          href="mailto:harsh@nexxigital.com" 
+          href="mailto:harsh@nexxigital.com"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"
+          rel="noopener noreferrer"
         >
           harsh@nexxigital.com
         </a>
