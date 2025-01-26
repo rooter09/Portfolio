@@ -21,9 +21,9 @@ const Career = () => {
               <h3>2024</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              As Co-Founder and CTO, I lead product innovation, manage technical
+              teams, and drive Nexxigital’s growth through innovative digital
+              solutions, ensuring we stay ahead in the market.
             </p>
           </div>
           <div className="career-info-box">
