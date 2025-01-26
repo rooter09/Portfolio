@@ -84,6 +84,27 @@
   opacity: 0;
   animation: whatFlicker 0.5s 1 forwards;
   animation-delay: 1s;
+  overflow: auto !important;
+  
+  /* Thin Scrollbar Styles */
+  scrollbar-width:none; /* For Firefox */
+  scrollbar-color: #e3e2e2d5 #000000; /* For Firefox */
+}
+
+/* Webkit-based browsers (Chrome, Safari, Edge) */
+.what-content-in::-webkit-scrollbar {
+  width: 2px; 
+  height: 2px; /* Set the height of the horizontal scrollbar */
+}
+
+.what-content-in::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 2px; 
+}
+
+.what-content-in::-webkit-scrollbar-track {
+  background-color: #e0e0e0; 
+  border-radius: 2px;
 }
 @keyframes whatFlicker {
   0%,

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 import HoverLinks from "./HoverLinks";
 import "./styles/Navbar.css";
 

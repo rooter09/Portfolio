@@ -1,7 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Splitting from "splitting";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,7 +18,7 @@ export default function setSplitText() {
   // Initialize Lenis for smooth scrolling
   const lenis = new Lenis({
     lerp: 0.1, // Smoothness factor
-    smoothWheel: true,
+    smoothWheel: true, // Ensure smooth scrolling is enabled
   });
 
   const raf = (time: number) => {
@@ -69,10 +70,10 @@ export default function setSplitText() {
           start: TriggerStart,
         },
         duration: 0.8,
-        ease: "power2.inOut",
+        // ease: "power2.inOut",
         y: 0,
         rotate: 0,
-        stagger: 0.03,
+        // stagger: 0.03,
       }
     );
   });
