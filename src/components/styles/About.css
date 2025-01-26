@@ -24,11 +24,19 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 1.2rem;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 1.5rem;
   letter-spacing: 1px;
+  color: #333; /* Default color */
+  text-align: justify;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
+.about-me p:hover {
+  color: white !important; /* Hover color change */
+} 
+
 
 @media only screen and (min-width: 600px) {
   .about-section {
