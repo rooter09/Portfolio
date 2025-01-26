@@ -25,7 +25,7 @@ const About = () => {
           Successfully trained over 1000+ individuals, fostering technical
           proficiency and industry readiness. Committed to delivering
           high-impact solutions that align with evolving tech landscapes and
-          business objectives.
+          business objectives. 
         </p>
       </div>
     </div>
