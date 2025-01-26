@@ -1,80 +1,131 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-import { SplitText } from "gsap-trial/SplitText";
+import gsap from "gsap";
+import Splitting from "splitting";
 
-interface ParaElement extends HTMLElement {
-  anim?: gsap.core.Animation;
-  split?: SplitText;
+export function initialFX() {
+  document.body.style.overflowY = "auto";
+  document.getElementsByTagName("main")[0].classList.add("main-active");
+  
+  // Change body background color
+  gsap.to("body", {
+    backgroundColor: "#0b080c",
+    duration: 0.5,
+    delay: 1,
+  });
+
+  // Split text into characters, lines, and words using Splitting.js
+  Splitting({ target: [".landing-info h3", ".landing-intro h2", ".landing-intro h1"], by: "chars" });
+  animateText(".landing-info h3, .landing-intro h2, .landing-intro h1");
+
+  Splitting({ target: ".landing-h2-info", by: "chars" });
+  animateText(".landing-h2-info");
+
+  // Other animations
+  gsap.fromTo(
+    ".landing-info-h2",
+    { opacity: 0, y: 30 },
+    {
+      opacity: 1,
+      duration: 1.2,
+      ease: "power1.inOut",
+      y: 0,
+      delay: 0.8,
+    }
+  );
+  gsap.fromTo(
+    [".header", ".icons-section", ".nav-fade"],
+    { opacity: 0 },
+    {
+      opacity: 1,
+      duration: 1.2,
+      ease: "power1.inOut",
+      delay: 0.1,
+    }
+  );
+
+  Splitting({ target: ".landing-h2-info-1", by: "chars" });
+  Splitting({ target: ".landing-h2-1", by: "chars" });
+  Splitting({ target: ".landing-h2-2", by: "chars" });
+
+  const landingText3 = document.querySelectorAll(".landing-h2-info-1 .char");
+  const landingText4 = document.querySelectorAll(".landing-h2-1 .char");
+  const landingText5 = document.querySelectorAll(".landing-h2-2 .char");
+
+  LoopText(landingText3, landingText5);
+  LoopText(landingText4, landingText3);
 }
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+// Function to animate text
+function animateText(selector: string) {
+  const chars = document.querySelectorAll(`${selector} .char`);
+  if (!chars.length) return;
 
-export default function setSplitText() {
-  ScrollTrigger.config({ ignoreMobileResize: true });
-  if (window.innerWidth < 900) return;
-  const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
-  const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");
-
-  const TriggerStart = window.innerWidth <= 1024 ? "top 60%" : "20% 60%";
-  const ToggleAction = "play pause resume reverse";
-
-  paras.forEach((para: ParaElement) => {
-    para.classList.add("visible");
-    if (para.anim) {
-      para.anim.progress(1).kill();
-      para.split?.revert();
+  gsap.fromTo(
+    chars,
+    { opacity: 0, y: 80, filter: "blur(5px)" },
+    {
+      opacity: 1,
+      duration: 1.2,
+      filter: "blur(0px)",
+      ease: "power3.inOut",
+      y: 0,
+      stagger: 0.025,
+      delay: 0.3,
     }
+  );
+}
 
-    para.split = new SplitText(para, {
-      type: "lines,words",
-      linesClass: "split-line",
-    });
+// Function to create looping animations
+function LoopText(Text1: NodeListOf<Element>, Text2: NodeListOf<Element>) {
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+  const delay = 4;
+  const delay2 = delay * 2 + 1;
 
-    para.anim = gsap.fromTo(
-      para.split.words,
-      { autoAlpha: 0, y: 80 },
+  tl.fromTo(
+    Text2,
+    { opacity: 0, y: 80 },
+    {
+      opacity: 1,
+      duration: 1.2,
+      ease: "power3.inOut",
+      y: 0,
+      stagger: 0.1,
+      delay: delay,
+    },
+    0
+  )
+    .fromTo(
+      Text1,
+      { y: 80 },
       {
-        autoAlpha: 1,
-        scrollTrigger: {
-          trigger: para.parentElement?.parentElement,
-          toggleActions: ToggleAction,
-          start: TriggerStart,
-        },
-        duration: 1,
-        ease: "power3.out",
+        duration: 1.2,
+        ease: "power3.inOut",
         y: 0,
-        stagger: 0.02,
-      }
-    );
-  });
-  titles.forEach((title: ParaElement) => {
-    if (title.anim) {
-      title.anim.progress(1).kill();
-      title.split?.revert();
-    }
-    title.split = new SplitText(title, {
-      type: "chars,lines",
-      linesClass: "split-line",
-    });
-    title.anim = gsap.fromTo(
-      title.split.chars,
-      { autoAlpha: 0, y: 80, rotate: 10 },
+        stagger: 0.1,
+        delay: delay2,
+      },
+      1
+    )
+    .fromTo(
+      Text1,
+      { y: 0 },
       {
-        autoAlpha: 1,
-        scrollTrigger: {
-          trigger: title.parentElement?.parentElement,
-          toggleActions: ToggleAction,
-          start: TriggerStart,
-        },
-        duration: 0.8,
-        ease: "power2.inOut",
-        y: 0,
-        rotate: 0,
-        stagger: 0.03,
-      }
+        y: -80,
+        duration: 1.2,
+        ease: "power3.inOut",
+        stagger: 0.1,
+        delay: delay,
+      },
+      0
+    )
+    .to(
+      Text2,
+      {
+        y: -80,
+        duration: 1.2,
+        ease: "power3.inOut",
+        stagger: 0.1,
+        delay: delay2,
+      },
+      1
     );
-  });
-
-  ScrollTrigger.addEventListener("refresh", () => setSplitText());
 }
