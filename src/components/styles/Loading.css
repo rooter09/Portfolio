@@ -240,7 +240,7 @@
   position: absolute;
   overflow: hidden;
   left: 0;
-  animation: loaderGame 7s linear infinite;
+  animation: loaderGame 3s linear infinite;
 }
 @keyframes loaderGame {
   0% {
