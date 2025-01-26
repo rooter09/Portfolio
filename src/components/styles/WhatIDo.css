@@ -5,11 +5,14 @@
   place-items: center;
   position: relative;
   opacity: 1;
-  height: 100vh;
+  height: 80vh;
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
   z-index: 9;
+  overflow: auto;
+  scrollbar-width:thin; /* For Firefox */
+  scrollbar-color: #e3e2e2d5 #000000; /* For Firefox */
 }
 .what-box {
   width: 50%;
@@ -87,7 +90,7 @@
   overflow: auto !important;
   
   /* Thin Scrollbar Styles */
-  scrollbar-width:none; /* For Firefox */
+  scrollbar-width:thin; /* For Firefox */
   scrollbar-color: #e3e2e2d5 #000000; /* For Firefox */
 }
 
