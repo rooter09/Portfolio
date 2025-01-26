@@ -15,10 +15,10 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>CO-FOUNDER & CTO</h4>
+                <h5>NEXXIGITAL</h5>
               </div>
-              <h3>2022</h3>
+              <h3>2024</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
