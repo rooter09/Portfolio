@@ -18,7 +18,8 @@ const Career = () => {
                 <h4>CO-FOUNDER & CTO</h4>
                 <h5>NEXXIGITAL</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2024-Present</h3>
+
             </div>
             <p>
               As Co-Founder and CTO, I lead product innovation, manage technical
@@ -29,10 +30,10 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Digital Marketing Executive</h4>
+                <h5>Purezza Technologies</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2022-2024</h3>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
