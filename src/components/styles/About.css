@@ -25,6 +25,12 @@
   color: var(--accentColor);
 }
 
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .para {
   font-size: 1.2rem;
   font-weight: 600;

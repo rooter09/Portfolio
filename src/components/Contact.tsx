@@ -9,10 +9,14 @@ const Contact = () => {
         <div className="contact-flex">
           <div className="contact-box">
             <h4>Email</h4>
-            <p>
+            <p className="col">
               <a href="mailto:harsh@nexxigital.com" data-cursor="disable" target= "_blank">
                 harsh@nexxigital.com
               </a>
+              <a href="mailto:harshsandilya09@gmail.com" data-cursor="disable" target= "_blank">
+                harshsandilya09@gmail.com
+              </a>
+              
             </p>
             <h4>Phone</h4>
             <p>
