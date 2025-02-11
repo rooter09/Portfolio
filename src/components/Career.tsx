@@ -87,7 +87,7 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Team Manager</h4>
+                <h4>Team Leader</h4>
                 <h5>Purezza Technologies</h5>
               </div>
               <h3>June 2023- Jan 2025</h3>
