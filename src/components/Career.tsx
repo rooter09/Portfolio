@@ -93,9 +93,11 @@ const Career = () => {
               <h3>June 2023- Jan 2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Led cross-functional teams at Purezza Technologies, overseeing
+              project execution, mentoring interns, optimizing workflows, and
+              ensuring seamless collaboration to drive innovation, efficiency,
+              and successful delivery of digital solutions aligned with client
+              objectives.
             </p>
           </div>
           <div className="career-info-box">
