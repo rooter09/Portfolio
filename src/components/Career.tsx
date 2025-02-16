@@ -60,6 +60,21 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
+                <h4>Senior SEO Officer</h4>
+                <h5>Purezza Technologies</h5>
+              </div>
+              <h3>Jan 2023- Jan 2025</h3>
+            </div>
+            <p>
+              Led SEO strategies at Purezza Technologies, optimizing websites
+              for search engines, enhancing visibility, driving organic traffic,
+              and ensuring improved rankings through keyword research, content
+              optimization, and performance analysis.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
                 <h4>Project Managment</h4>
                 <h5>Purezza Technologies</h5>
               </div>
@@ -104,7 +119,7 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Graphics Designer</h4>
+                <h4>Sr. Graphics Designer</h4>
                 <h5>Purezza Technologies</h5>
               </div>
               <h3>Jan 2023- Jan 2025</h3>
