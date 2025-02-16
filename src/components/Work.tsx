@@ -110,7 +110,10 @@ const Work = () => {
                   </div>
                 )}
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <WorkImage
+                image={`/wimages/${value.image}`} // Use relative path to images
+                alt={value.name}
+              />
             </div>
           ))}
         </div>
