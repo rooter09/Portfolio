@@ -131,20 +131,23 @@ const WhatIDo = () => {
             <div className="what-content-in">
               <h3>DESIGN</h3>
               <h4>Description</h4>
+              <p style={{ textAlign: "justify" }}></p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Creative and detail-oriented designer with expertise in UI/UX
+                design, branding, and digital assets creation. Skilled in using
+                tools like Figma and Adobe Suite to craft user-centered,
+                visually appealing designs that align with business goals.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
+                <div className="what-tags">Adobe Photoshop</div>
+                <div className="what-tags">Adobe Illustrator</div>
                 <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
+                <div className="what-tags">Graphics Design</div>
+                <div className="what-tags">Canva</div>
+                <div className="what-tags">2d Animated</div>
                 <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">Figma</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -168,22 +171,25 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
+              <h3>DIGITAL MARKETING</h3>
               <h4>Description</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                Strategic digital marketer with expertise in SEO, social media,
+                content marketing, and PPC campaigns. Skilled in driving
+                traffic, enhancing brand visibility, and optimizing online
+                presence to achieve measurable business growth.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">SEO</div>
+                <div className="what-tags">SMM</div>
+                <div className="what-tags">Content Writing</div>
+                <div className="what-tags">SmallSEOTools</div>
+                <div className="what-tags">Plagiarism Detector</div>
+                <div className="what-tags">Grammarly</div>
+                <div className="what-tags">Meta Ads</div>
+                <div className="what-tags">Google Ads</div>
+                <div className="what-tags">PPC Campaigns</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -191,7 +197,6 @@ const WhatIDo = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
