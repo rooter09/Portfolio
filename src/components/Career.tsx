@@ -29,13 +29,28 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Digital Marketing Executive</h4>
+                <h4>Senior Security Officer</h4>
+                <h5>NEXXIGITAL</h5>
+              </div>
+              <h3>Jan 2024- Present</h3>
+            </div>
+            <p>
+              Oversaw cybersecurity strategies and risk management at
+              Nexxigital, ensuring the protection of digital assets, conducting
+              security audits, and implementing advanced protocols to safeguard
+              systems, networks, and client data from potential threats.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Sr. Digital Marketing Executive</h4>
                 <h5>Purezza Technologies</h5>
               </div>
               <h3>Jan 2023- Jan 2025</h3>
             </div>
             <p>
-              As a Digital Marketing Executive at Purezza, I developed and
+              As a Sr. Digital Marketing Executive at Purezza, I developed and
               implemented effective digital marketing strategies, focusing on
               SEO, content creation, and social media campaigns to drive brand
               awareness, increase traffic, and generate leads. My efforts
@@ -45,7 +60,7 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Cyber Security Analyst</h4>
+                <h4>Project Managment</h4>
                 <h5>Purezza Technologies</h5>
               </div>
               <h3>June 2023- Jan 2025</h3>
@@ -59,35 +74,7 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Threat Hunting</h4>
-                <h5>Purezza Technologies</h5>
-              </div>
-              <h3>June 2023- Jan 2025</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Project Manager</h4>
-                <h5>Purezza Technologies</h5>
-              </div>
-              <h3>June 2023- Jan 2025</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Team Leader</h4>
+                <h4>Team Management</h4>
                 <h5>Purezza Technologies</h5>
               </div>
               <h3>June 2023- Jan 2025</h3>
