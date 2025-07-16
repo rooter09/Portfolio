@@ -42,15 +42,6 @@ const Navbar: React.FC = () => {
         <a href="/#" className="navbar-title" data-cursor="disable">
           HARSH SANDILYA
         </a>
-        <a
-          href="mailto:harsh@nexxigital.com"
-          className="navbar-connect"
-          data-cursor="disable"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          harsh@nexxigital.com
-        </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
